@@ -53,8 +53,9 @@ bool initialize_window(void) {
 }
 
 void setup(void) {
-    // Allocate the required memory in bytos to hold the color buffer
+    // Allocate the required memory in bytes to hold the color buffer
     color_buffer = (uint32_t*) malloc(sizeof(uint32_t) * window_width * window_height);
+    if (!color_buffer); // error
     
     // Creating a SDL texture that is used to display the color buffer
     color_buffer_texture = SDL_CreateTexture(
