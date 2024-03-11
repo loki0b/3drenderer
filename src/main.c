@@ -11,7 +11,7 @@
 #define RENDER_COLOR_B 0
 #define RENDER_ALPHA 255
 
-#define CLEAR_COLOR 0xFF000000
+#define BLACK 0xFF000000
 
 bool is_running = false;
 
