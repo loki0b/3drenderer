@@ -11,6 +11,7 @@
 #define RENDER_COLOR_B 0
 #define RENDER_ALPHA 255
 
+#define CLEAR_COLOR 0xFF000000
 
 bool is_running = false;
 
@@ -134,7 +135,7 @@ void render(void) {
     draw_grid();
 
     render_color_buffer();
-    clear_color_buffer(0xFFFFFF00);
+    clear_color_buffer(BLACK);
 
     SDL_RenderPresent(renderer);
 }
