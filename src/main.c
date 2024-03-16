@@ -60,6 +60,11 @@ void render(void) {
     SDL_RenderClear(renderer);
     
     draw_line_grid();
+    draw_pixel(30, 30, 0xFFFF00FF);
+    draw_pixel(31, 31, 0xFFFF00FF);
+    draw_pixel(32, 32, 0xFFFF00FF);
+    draw_pixel(33, 33, 0xFFFF00FF);
+
     draw_rect(300, 200, 300, 150, 0xFFFFFF00);
 
     render_color_buffer();

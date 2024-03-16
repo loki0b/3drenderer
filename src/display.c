@@ -109,6 +109,12 @@ void draw_dot_grid(void) {
     }
 }
 
+void draw_pixel(int x, int y, uint32_t color) {
+    if (x < window_width && y < window_height) {
+        color_buffer[(window_width * y) + x] = color;
+    }
+}
+
 void draw_rect(int x, int y, int width, int height, uint32_t color) {
     for (int h = 0; h < window_height; h++) {
         for (int w = 0; w < window_width; w++) {
