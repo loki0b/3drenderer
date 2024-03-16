@@ -81,6 +81,7 @@ void destroy_window(void) {
     SDL_Quit();
 }
 
+// Exercises
 void draw_line_grid(void) {
     uint32_t color = 0xFF333333;
 
