@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <SDL2/SDL.h>
 #include "display.h"
+#include "vector.h"
 
 #define RENDER_COLOR_R 255
 #define RENDER_COLOR_G 0
